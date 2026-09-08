@@ -1,0 +1,15 @@
+title: Contact Us
+description: Learn more about Noor-Ul-Ilm School System, our campus in Islamabad, our approach to parent engagement, and the resources available to our students.
+
+content: |
+  ## Contact Us
+
+  - **Phone:**  0333 5352110 / 051 7065481
+  - **Email:** [info.noorulilmschoolsystem@gmail.com](mailto:info.noorulilmschoolsystem@gmail.com)
+  - **Address:** Block B, Multi Gardens B-17, Islamabad, Islamabad Capital Territory, Pakistan
+
+images:
+  - src: /about/campus.jpeg
+    alt: "Photo of the school campus"
+  - src: /about/children-9.jpeg
+    alt: "Photo of students or a classroom"

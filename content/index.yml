@@ -1,0 +1,131 @@
+seo:
+  title: "Noor-Ul-Ilm School System - Empowering Young Minds"
+  description: "Noor-Ul-Ilm School System is an educational institution in Block B Multi Gardens B-17, Islamabad, offering Primary, Elementary, Secondary and Higher Secondary programs that empower young minds."
+title: "Empowering Young Minds"
+description: "Noor-Ul-Ilm School Systemoffers a comprehensive education from elementary to secondary level, equipping students with the skills and knowledge they need to succeed in the modern world. Our dedicated team of educators is committed to providing a nurturing environment where students can learn and grow."
+hero:
+  campus:
+    - src: /hero/campus.jpeg
+      alt: "PLACEHOLDER - photo of school campus"
+  links:
+    - label: "Book Online"
+      to: https://www.noorulilm.info/book-online
+      color: "neutral"
+  images:
+    - src: /hero/children-4.jpeg
+      alt: "PLACEHOLDER - photo of children"
+    - src: /hero/children-1.jpeg
+      alt: "PLACEHOLDER - photo of students in classroom"
+    - src: /hero/children-2.jpeg
+      alt: "PLACEHOLDER - photo of school event or trip"
+    - src: /hero/children-3.jpeg
+      alt: "PLACEHOLDER - photo of school activity"
+about:
+  title: "About Our School"
+  description: |
+  
+    Beyond the classroom, we organize outings for students to places like amusement parks, museums, and zoos, believing these trips are a great way to enhance the learning experience and create lasting memories. We also arrange cultural celebrations on national holidays to immerse children in the traditions and values associated with these important dates, and we encourage a love and respect for nature so students can grow into responsible stewards of the environment.
+experience:
+  title: "Our Programs & Services"
+  items:
+    - position: "Primary Level (School) —"
+      date: "Book Now"
+      company:
+        name: "Noor-Ul-Ilm School System"
+        logo: "i-lucide-school"
+        url: "https://www.noorulilm.info/booking-calendar/primary-level-school"
+        color: "#00A896"
+    - position: "Primary Level Sessions (Academy) —"
+      date: "Book Now"
+      company:
+        name: "Noor-Ul-Ilm School System"
+        logo: "i-lucide-book-open"
+        url: "https://www.noorulilm.info/booking-calendar/primary-level-sessions-academy"
+        color: "#00A896"
+    - position: "Elementary Level (School) —"
+      date: "Book Now"
+      company:
+        name: "Noor-Ul-Ilm School System"
+        logo: "i-lucide-school"
+        url: "https://www.noorulilm.info/booking-calendar/elementary-level-school"
+        color: "#3D5A80"
+    - position: "Elementary Level Sessions (Academy) —"
+      date: "Book Now"
+      company:
+        name: "Noor-Ul-Ilm School System"
+        logo: "i-lucide-book-open"
+        url: "https://www.noorulilm.info/booking-calendar/elementary-level-sessions-academy-1"
+        color: "#3D5A80"
+    - position: "Secondary Level (School) —"
+      date: "Book Now"
+      company:
+        name: "Noor-Ul-Ilm School System"
+        logo: "i-lucide-school"
+        url: "https://www.noorulilm.info/booking-calendar/secondary-level-school"
+        color: "#7B2D26"
+    - position: "Secondary Level Sessions (Academy) —"
+      date: "Book Now"
+      company:
+        name: "Noor-Ul-Ilm School System"
+        logo: "i-lucide-book-open"
+        url: "https://www.noorulilm.info/booking-calendar/secondary-level-sessions-academy"
+        color: "#7B2D26"
+    - position: "Higher Secondary Level Sessions (Academy) —"
+      date: "Book Now"
+      company:
+        name: "Noor-Ul-Ilm School System"
+        logo: "i-lucide-graduation-cap"
+        url: "https://www.noorulilm.info/booking-calendar/higher-secondary-level-sessions-academy"
+        color: "#5E4B8B"
+testimonials:
+  - quote: "PLACEHOLDER - Add a real quote from a parent about their experience with Noor-Ul-Ilm School System here."
+    author:
+      name: "PLACEHOLDER Parent Name"
+      description: "Parent of a student"
+      avatar:
+        src: "/testimonials/placeholder-1.jpg"
+        srcset: "/testimonials/placeholder-1.jpg 2x"
+  - quote: "PLACEHOLDER - Add another parent or student testimonial here."
+    author:
+      name: "PLACEHOLDER Parent Name"
+      description: "Parent of a student"
+      avatar:
+        src: "/testimonials/placeholder-2.jpg"
+        srcset: "/testimonials/placeholder-2.jpg 2x"
+blog:
+  title: "Latest Posts"
+  description: "News and updates from Noor-Ul-Ilm School System"
+faq:
+  title: Frequently Asked Questions
+  description: "Answers to common questions about admissions and school life."
+  categories:
+    - title: Admissions
+      questions:
+        - label: How do I enroll my child?
+          content: |
+            Parents can enroll their children by visiting our campus or calling our office.
+        - label: Which board examinations do the students partake in?
+          content: |
+            9th and 10th grade students take the Federal Board of Intermediate and Secondary Education (FBISE) examinations.
+        - label: Is there a Kindergarten program available for young children?
+          content: |
+            Yes, we offer a Kindergarten program for children aged 4-5 years old. The program focuses on early childhood development and prepares children for primary education.
+        - label: Does the school offer after-school programs?
+          content: |
+            Yes, we offer after-school tuition programs, including but not limited to academic enrichment activities. These programs are designed to support students' interests and academic needs.
+    - title: Parent/Guardian Engagement
+      questions:
+        - label: How can I stay updated on school news and events?
+          content: |
+            Daily updates are shared through our messaging channels. Actively checking the messaging channels is the best way to stay informed. You may also visit our website for information about the school, upcoming events, academic programs, and extracurricular activities.
+        - label: How can I contact my child's teachers?
+          content: |
+            Parents can reach out to teachers via email or through the school's online messaging system to discuss academic performance or any other concerns.
+    - title: School Life
+      questions:
+        - label: Does the school organize trips and events?
+          content: |
+            Yes. We organize outings for students to places like amusement parks, museums, and zoos, and we arrange cultural celebrations on national holidays, because we believe these experiences enhance learning and create lasting memories.
+        - label: What resources are available to students?
+          content: |
+            Students have access to a library, a computer lab, a science lab, sports facilities, and tutoring services for extra academic support.
