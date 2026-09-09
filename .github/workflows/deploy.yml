@@ -9,14 +9,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: corepack enable
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9.0.x
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: "20"
       # Pick your own package manager and build script
-      - run: npm install
-      - run: NUXT_APP_BASE_URL=/school-website/ npm nuxt build --preset github_pages
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build nuxt
+        run: pnpm generate
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
