@@ -1,48 +1,49 @@
-# https://github.com/actions/deploy-pages#usage
 name: Deploy to GitHub Pages
+
 on:
   workflow_dispatch:
   push:
     branches:
       - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v6
+        uses: pnpm/action-setup@v4
 
-      - name: Install node
-        uses: actions/setup-node@v7
+      - name: Install Node
+        uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: 22
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
-      - name: Build nuxt
-        run: NUXT_APP_BASE_URL=/school-website/ pnpm build --preset github_pages
-      - name: Upload artifact
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Generate static site
+        run: NUXT_APP_BASE_URL=/school-website/ pnpm exec nuxi generate
+
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./.output/public
-  # Deployment job
+
   deploy:
-    # Add a dependency to the build job
     needs: build
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-    # Deploy to the github_pages environment
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    # Specify runner + deployment step
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages

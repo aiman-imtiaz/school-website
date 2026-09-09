@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { PageFeatureProps } from '@nuxt/ui'
+import { withBase } from 'ufo'
 
 const { data: page } = await useAsyncData('about', () => {
   return queryCollection('about').first()
@@ -63,8 +64,8 @@ const features = ref<PageFeatureProps[]>([
     >
       <UColorModeAvatar
         class="size-36 rounded-lg ring ring-default ring-offset-3 ring-offset-bg"
-        :light="global.picture?.light!"
-        :dark="global.picture?.dark!"
+        :light="withBase(global.picture?.light!)"
+        :dark="withBase(global.picture?.dark!)"
         :alt="global.picture?.alt!"
       />
     </UPageHero>

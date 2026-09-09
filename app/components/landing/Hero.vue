@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
+import { withBase } from 'ufo'
 
 const { footer, global } = useAppConfig()
 
@@ -128,7 +129,7 @@ defineProps<{
     </template>
 
     <img
-      src="/about/campus-2.jpeg"
+      :src="withBase('/about/campus-2.jpeg')"
       alt="App screenshot"
       class="rounded-lg shadow-2xl h-[500px] mx-auto"
     >

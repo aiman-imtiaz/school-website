@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { withBase } from 'ufo'
+
 const { data: page } = await useAsyncData('index', () => {
   return queryCollection('index').first()
 })
@@ -15,7 +17,7 @@ useSeoMeta({
   ogTitle: page.value?.seo.title || page.value?.title,
   description: page.value?.seo.description || page.value?.description,
   ogDescription: page.value?.seo.description || page.value?.description,
-  ogImage: 'logo/logo.png'
+  ogImage: withBase('/logo/logo.png')
 })
 </script>
 

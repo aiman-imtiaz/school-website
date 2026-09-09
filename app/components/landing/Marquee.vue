@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
+import { withBase } from 'ufo'
 
 defineProps<{
   page: IndexCollectionItem
@@ -60,6 +61,7 @@ defineProps<{
           class="rounded-lg aspect-square object-cover"
           :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
           v-bind="img"
+          :src="withBase(img.src)"
         />
       </Motion>
     </UMarquee>

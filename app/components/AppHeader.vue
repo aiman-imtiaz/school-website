@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
+import { withBase } from 'ufo'
 
 const { global } = useAppConfig()
 
@@ -15,12 +16,12 @@ defineProps<{
       class="flex items-center gap-2 shrink-0 lg:absolute lg:left-4 sm:lg:left-6"
     >
       <img
-        :src="global.picture?.light!"
+        :src="withBase(global.picture?.light!)"
         :alt="global.picture?.alt!"
         class="h-12 w-12 rounded-full object-cover dark:hidden"
       >
       <img
-        :src="global.picture?.dark!"
+        :src="withBase(global.picture?.dark!)"
         :alt="global.picture?.alt!"
         class="h-12 w-12 rounded-full object-cover hidden dark:block"
       >

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { withBase } from 'ufo'
+
 defineProps<{
   image: {
     src: string
@@ -17,7 +19,7 @@ defineProps<{
     ]"
   >
     <img
-      :src="image.src"
+      :src="withBase(image.src)"
       :alt="image.alt"
       class="size-32 object-cover"
     >

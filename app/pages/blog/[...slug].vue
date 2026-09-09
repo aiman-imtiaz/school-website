@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { withoutTrailingSlash } from 'ufo'
+import { withoutTrailingSlash, withBase } from 'ufo'
 
 const route = useRoute()
 const routePath = computed(() => withoutTrailingSlash(route.path))
@@ -34,7 +34,7 @@ if (page.value.image) {
   })
 }
 
-const articleLink = computed(() => `${window?.location}`)
+const articleLink = computed(() => useRequestURL().toString())
 
 const formatDate = (dateString: string) => {
   return new Date(dateString).toLocaleDateString('en-US', {
@@ -70,7 +70,7 @@ const formatDate = (dateString: string) => {
           </div>
           <NuxtImg
             v-if="page.image"
-            :src="page.image"
+            :src="withBase(page.image)"
             :alt="page.title"
             class="rounded-lg w-full h-[300px] object-cover object-center"
           />
