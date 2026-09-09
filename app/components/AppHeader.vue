@@ -10,22 +10,21 @@ defineProps<{
 
 <template>
   <div class="fixed top-2 sm:top-4 inset-x-0 z-10 px-4 sm:px-6 flex items-center justify-between lg:justify-center">
-    <NuxtLink 
-      to="/" 
+    <NuxtLink
+      to="/"
       class="flex items-center gap-2 shrink-0 lg:absolute lg:left-4 sm:lg:left-6"
-      >
-      <img 
-        :src="global.picture?.light!" 
+    >
+      <img
+        :src="global.picture?.light!"
         :alt="global.picture?.alt!"
         class="h-12 w-12 rounded-full object-cover dark:hidden"
-        >
-      <img 
-        :src="global.picture?.dark!" 
+      >
+      <img
+        :src="global.picture?.dark!"
         :alt="global.picture?.alt!"
         class="h-12 w-12 rounded-full object-cover hidden dark:block"
-        >
-      <span class="hidden sm:inline text-sm font-semibold text-highlighted"
       >
+      <span class="hidden sm:inline text-sm font-semibold text-highlighted">
         {{ global.name }}
       </span>
     </NuxtLink>

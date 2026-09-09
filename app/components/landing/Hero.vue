@@ -35,19 +35,25 @@ defineProps<{
           delay: 0.1
         }"
       >
-        <UButton :color="global.available ? 'success' : 'error'" variant="ghost" class="gap-2"   
-          :label="global.available ? 'Admissions open' : 'Admissions closed'">
+        <UButton
+          :color="global.available ? 'success' : 'error'"
+          variant="ghost"
+          class="gap-2"
+          :label="global.available ? 'Admissions open' : 'Admissions closed'"
+        >
           <template #leading>
             <span class="relative flex size-2">
-              <span class="absolute inline-flex size-full rounded-full opacity-75"
-                :class="global.available ? 'bg-success animate-ping' : 'bg-error'" />
-              <span class="relative inline-flex size-2 scale-90 rounded-full"
-                :class="global.available ? 'bg-success' : 'bg-error'" />
+              <span
+                class="absolute inline-flex size-full rounded-full opacity-75"
+                :class="global.available ? 'bg-success animate-ping' : 'bg-error'"
+              />
+              <span
+                class="relative inline-flex size-2 scale-90 rounded-full"
+                :class="global.available ? 'bg-success' : 'bg-error'"
+              />
             </span>
           </template>
         </UButton>
-        
-
       </Motion>
     </template>
 
@@ -68,7 +74,6 @@ defineProps<{
           delay: 0.1
         }"
       >
-
         {{ page.title }}
       </Motion>
     </template>
@@ -95,7 +100,6 @@ defineProps<{
     </template>
 
     <template #links>
-
       <div class="gap-x-4 inline-flex mt-4">
         <Motion
           v-for="(link, index) of footer?.links"
@@ -127,7 +131,6 @@ defineProps<{
       src="/about/campus-2.jpeg"
       alt="App screenshot"
       class="rounded-lg shadow-2xl h-[500px] mx-auto"
-    />
-    
+    >
   </UPageHero>
 </template>

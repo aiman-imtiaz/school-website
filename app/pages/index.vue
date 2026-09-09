@@ -22,9 +22,11 @@ useSeoMeta({
 <template>
   <UPage v-if="page">
     <LandingHero :page />
-    <UPageSection :ui="{
-      container: 'pt-0! flex flex-col gap-8'
-    }">
+    <UPageSection
+      :ui="{
+        container: 'pt-0! flex flex-col gap-8'
+      }"
+    >
       <!-- <LandingAbout :page /> -->
       <LandingMarquee :page />
       <!-- <LandingWorkExperience :page /> -->

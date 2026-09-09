@@ -39,12 +39,12 @@ export default defineAppConfig({
       'to': 'tel:+923335352110',
       'target': '_blank',
       'aria-label': 'Call Noor-Ul-Ilm School System'
-      }, {
-        'icon': 'i-lucide-facebook',
+    }, {
+      'icon': 'i-lucide-facebook',
       'to': 'https://www.facebook.com/people/Noor-Ul-Ilm-School-System/100067954897269/',
-        'target': '_blank',
-        'aria-label': 'Open Noor-Ul-Ilm School System Facebook Page'
-      }]
+      'target': '_blank',
+      'aria-label': 'Open Noor-Ul-Ilm School System Facebook Page'
+    }]
     // PLACEHOLDER - swap in real social media links (Facebook/Instagram/etc.) when available
   }
 })
