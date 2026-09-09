@@ -29,7 +29,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Generate static site
-        run: NUXT_APP_BASE_URL=/school-website/ pnpm exec nuxi generate
+        run: pnpm exec nuxi generate
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

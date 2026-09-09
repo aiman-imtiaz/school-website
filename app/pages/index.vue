@@ -17,7 +17,7 @@ useSeoMeta({
   ogTitle: page.value?.seo.title || page.value?.title,
   description: page.value?.seo.description || page.value?.description,
   ogDescription: page.value?.seo.description || page.value?.description,
-  ogImage: withBase('/logo/logo.png')
+  ogImage: '/logo/logo.png'
 })
 </script>
 

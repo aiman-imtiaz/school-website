@@ -16,12 +16,12 @@ defineProps<{
       class="flex items-center gap-2 shrink-0 lg:absolute lg:left-4 sm:lg:left-6"
     >
       <img
-        :src="withBase(global.picture?.light!)"
+        :src="global.picture?.light!"
         :alt="global.picture?.alt!"
         class="h-12 w-12 rounded-full object-cover dark:hidden"
       >
       <img
-        :src="withBase(global.picture?.dark!)"
+        :src="global.picture?.dark!"
         :alt="global.picture?.alt!"
         class="h-12 w-12 rounded-full object-cover hidden dark:block"
       >

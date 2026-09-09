@@ -129,7 +129,7 @@ defineProps<{
     </template>
 
     <img
-      :src="withBase('/about/campus-2.jpeg')"
+      src="/about/campus-2.jpeg"
       alt="App screenshot"
       class="rounded-lg shadow-2xl h-[500px] mx-auto"
     >

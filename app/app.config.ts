@@ -2,8 +2,8 @@ export default defineAppConfig({
   global: {
     name: 'Noor-Ul-Ilm School System',
     picture: {
-      dark: 'logo/logo.png',
-      light: 'logo/logo.png',
+      dark: '/logo/logo.png',
+      light: '/logo/logo.png',
       alt: 'Noor-Ul-Ilm School System logo'
     },
     meetingLink: 'https://www.noorulilm.info/book-online',
