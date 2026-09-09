@@ -25,7 +25,7 @@ jobs:
         run: pnpm install
 
       - name: Build nuxt
-        run: pnpm generate
+        run: NUXT_APP_BASE_URL=/school-website/ pnpm build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
