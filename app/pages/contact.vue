@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import type { PageFeatureProps, ButtonProps } from '@nuxt/ui'
+import type { PageFeatureProps } from '@nuxt/ui'
+
 const { data: page } = await useAsyncData('about', () => {
   return queryCollection('about').first()
 })
@@ -29,7 +30,7 @@ const features = ref<PageFeatureProps[]>([
   {
     title: 'Phone',
     description: '0333 5352110 / 051 7065481',
-    icon: 'i-lucide-phone',
+    icon: 'i-lucide-phone'
     // to: '/docs/getting-started/integrations/icons'
   },
   {
@@ -41,7 +42,7 @@ const features = ref<PageFeatureProps[]>([
   {
     title: 'Address',
     description: 'Block B, Multi Gardens B-17, Islamabad, Islamabad Capital Territory, Pakistan',
-    icon: 'i-lucide-school',
+    icon: 'i-lucide-school'
     // to: '/docs/getting-started/integrations/color-mode'
   }
 ])
@@ -68,20 +69,20 @@ const features = ref<PageFeatureProps[]>([
       />
     </UPageHero>
     <UPageSection
-    orientation="horizontal"
-    :features="features"
+      orientation="horizontal"
+      :features="features"
       :ui="{
         container: 'pt-0!'
       }"
     >
-    <div class="flex flex-row justify-center items-center py-10 -space-x-8">
-      <PolaroidItem 
-        v-for="(image, index) in page.images"
-        :key="index"
-        :image="image"
-        :index
-      />
-    </div>
+      <div class="flex flex-row justify-center items-center py-10 -space-x-8">
+        <PolaroidItem
+          v-for="(image, index) in page.images"
+          :key="index"
+          :image="image"
+          :index
+        />
+      </div>
     </UPageSection>
   </UPage>
 </template>
