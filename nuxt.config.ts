@@ -24,9 +24,9 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-06-30',
 
   nitro: {
-    preset: 'cloudflare_pages',
-    prerender: {
-      autoSubfolderIndex: false
+    preset: 'cloudflare_module',
+    cloudflare: {
+      deployConfig: true
     }
   },
 
