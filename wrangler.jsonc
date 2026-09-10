@@ -1,0 +1,13 @@
+{
+    "compatibility_date": "2026-09-08",
+    "compatibility_flags": [
+        "nodejs_compat"
+    ],
+    "d1_databases": [
+        {
+            "binding": "DB",
+            "database_name": "school-website-content",
+            "database_id": "cebca23d-b8cc-4cbc-b36e-4bfd34fca9d1"
+        }
+    ]
+}
