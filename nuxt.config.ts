@@ -19,8 +19,7 @@ export default defineNuxtConfig({
   content: {
     type: 'd1',
     bindingName: 'DB'
-    }
-  ,
+  },
 
   compatibilityDate: '2026-06-30',
 
