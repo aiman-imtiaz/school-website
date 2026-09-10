@@ -17,15 +17,17 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   content: {
-    experimental: {
-      sqliteConnector: 'native'
-    }
+    type: 'd1',
+    bindingName: 'DB'
   },
 
   compatibilityDate: '2026-06-30',
 
   nitro: {
-    preset: 'cloudflare_module'
+    preset: 'cloudflare_module',
+    cloudflare: {
+      deployConfig: true
+    }
   },
 
   eslint: {
